@@ -16,3 +16,6 @@
 [submodule "shimada1"]
 	path = shimada1
 	url = https://github.com/Shimakzu/myProfileTemplate
+[submodule "momoka"]
+	path = momoka
+	url = https://github.com/Momoka1113/myProfileTemplate
