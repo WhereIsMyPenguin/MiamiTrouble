@@ -4,3 +4,15 @@
 [submodule "asai"]
 	path = asai
 	url = https://github.com/Alice-in-AqA/myProfileTemplate
+[submodule "simada1"]
+	path = simada1
+	url = https://github.com/Shimakzu/myProfileTemplate
+[submodule "simada2"]
+	path = simada2
+	url = https://github.com/Shimakzu/hackathon_page_202402.git
+[submodule "shimada2"]
+	path = shimada2
+	url = https://github.com/Shimakzu/hackathon_page_202402.git
+[submodule "shimada1"]
+	path = shimada1
+	url = https://github.com/Shimakzu/myProfileTemplate

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bash -c 'cd tera911 && npm i && npm run build' && bash -c 'cd asai && npm i && npm run build'"
+    "build": "bash -c 'cd tera911 && npm i && npm run build' && bash -c 'cd asai && npm i && npm run build' && bash -c 'cd shimada1 && npm i && npm run build' && bash -c 'cd shimada2 && npm i && npm run build'"
   },
   "repository": {
     "type": "git",
