@@ -1,0 +1,6 @@
+[submodule "tera911"]
+	path = tera911
+	url = https://github.com/tera911/momo_profile
+[submodule "asai"]
+	path = asai
+	url = https://github.com/Alice-in-AqA/myProfileTemplate

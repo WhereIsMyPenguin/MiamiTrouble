@@ -1,0 +1,20 @@
+{
+  "name": "miamitrouble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bash -c 'cd tera911 && npm i && npm run build' && bash -c 'cd asai && npm i && npm run build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhereIsMyPenguin/MiamiTrouble.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WhereIsMyPenguin/MiamiTrouble/issues"
+  },
+  "homepage": "https://github.com/WhereIsMyPenguin/MiamiTrouble#readme"
+}
