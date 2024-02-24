@@ -1,56 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>List HTML Files</title>
 <link rel="stylesheet" href="Main.css">
 </head>
 <body>
-    <h1>TEST TEST TEST</h1>
-    <div class="container">
-        <ul id="OshiList" class="OL"></ul>
-    </div>
-    <script>
-        function listHTMLFiles() {
-        const folderPath = 'Oshi/';
-        const fileListElement = document.getElementById('OshiList');
-
-        fetch(folderPath)
-            .then(response => response.text())
-            .then(data => {
-                const parser = new DOMParser();
-                const htmlDoc = parser.parseFromString(data, 'text/html');
-                const links = htmlDoc.querySelectorAll('a');
-                
-                links.forEach(link => {
-                    const fileName = link.getAttribute('href');
-                    if (fileName.endsWith('.html')) {
-                        fetch(folderPath + fileName)
-                            .then(response => response.text())
-                            .then(htmlContent => {
-                                const contentParser = new DOMParser();
-                                const contentDoc = contentParser.parseFromString(htmlContent, 'text/html');
-                                const title = contentDoc.title;
-                                const imageSrc = contentDoc.querySelector('#EEE img').getAttribute('src');
-                                const listItem = document.createElement('li');
-                                listItem.className = 'col';
-                                listItem.innerHTML = `
-                                    <div class="col-img"><img style="max-width: 260px; max-height: 400px" src="${folderPath}${imageSrc}"></div>
-                                    <br>
-                                    <div class="col-text"><a href="${folderPath}${fileName}">${title}</a></div>
-                                `;
-                                fileListElement.appendChild(listItem);
-                            })
-                            .catch(error => {
-                                console.error('Error. Cant fetch HTML content:', error);
-                            });
-                    }
-                });
-            })
-            .catch(error => {
-                console.error('Error. Cant fetch folder content:', error);
-            });
-    }
-    window.onload = listHTMLFiles;
-    </script>
+    <body>
+        <div class="card">
+          <img src="7216.jpg">
+          <div class="card-text">
+            <h2>夏色まつり</h2>
+            <p>自称、清楚なVTuber</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image card2"></div>
+          <div class="card-text card2">
+            <h2>仮面ライダー W</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-image card3"></div>
+            <div class="card-text card3">
+              <h2>車</h2>
+              <p>かっこいい</p>
+            </div>
+          </div>
+      </body>
   </body>
   </html>

@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+text = 'Aloha';
 
 function App() {
   return (
